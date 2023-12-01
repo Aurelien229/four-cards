@@ -1,0 +1,79 @@
+$primary-Red: hsl(0, 78%, 62%);
+$primary-Cyan: hsl(180, 62%, 55%);
+$primary-Orange: hsl(34, 97%, 64%);
+$primary-Blue: hsl(212, 86%, 64%);
+
+$neutral-VeryDarkBlue: hsl(234, 12%, 34%);
+$neutral-GrayishBlue: hsl(229, 6%, 66%);
+$neutral-VeryLightGray: hsl(0, 0%, 98%);
+
+@import 'mobile';
+
+body {
+    background-color: $neutral-VeryLightGray;
+    font-family: 'Poppins', sans-serif;
+    color: $neutral-VeryDarkBlue;
+    
+}
+
+#supervisor,
+#calculator,
+#karma,
+#team {
+    display: block;
+    border: solid 1px rgb(228, 221, 213);
+    padding-left: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 2px $neutral-GrayishBlue;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#supervisor {
+
+
+border-top: solid 3px $primary-Cyan;
+    .super{
+        padding-left: 75%;
+        padding-bottom: 5%;
+    }
+}
+
+#calculator {
+    border-top: solid 3px $primary-Blue;
+    .calc{
+        padding-left: 75%;
+        padding-bottom: 5%;
+    }
+}
+
+#karma {
+    border-top: solid 3px yellow;
+    .kar{
+        padding-left: 75%;
+        padding-bottom: 5%;
+    }
+}
+
+#team {
+    border-top: solid 3px hsl(0, 78%, 62%);
+    .tb{
+        padding-left: 75%;
+        padding-bottom: 5%;
+    }
+}
+
+

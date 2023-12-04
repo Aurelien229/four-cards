@@ -1,0 +1,42 @@
+body {
+    background-color: $neutral-VeryLightGray;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: $neutral-VeryDarkBlue;
+    
+    align-items: center;
+    padding: 20px;
+}
+// Header Styles
+header {
+    text-align: center;
+}
+// Card Styles
+.supervisor, .calculator, .karma, .team {
+    
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 2px $neutral-GrayishBlue;
+
+    // Card Icon Styles
+    & img.icon {
+        display: block;
+        margin-left: auto;
+    }
+}
+// Grid Styles
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    margin: 10px;
+   
+    & :hover{ 
+        background-color: $neutral-GrayishBlue;
+    }
+}
+    
